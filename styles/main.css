@@ -4,26 +4,40 @@
 
 
 /* Шрифты */
-html,body {
+html,
+body {
     font-size: 12px;
     font-family: 'Fira Sans', sans-serif;
     line-height: 1.2;
-
     margin: 0;
     padding: 0;
-
 }
- 
+
 h1 {
     font-weight: 300;
     font-size: 6em;
     text-align: left;
     color: rgb(0, 0, 0);
+    position: absolute;
+    left: 209.844px;
+    top: 352.14px;
+}
+
+.header img {
+    position: absolute;
+}
+
+.header p {
+    position: relative;
+    font-size: 300;
+    left: 209.516px;
+    top: 583.121px;
+    line-height: 1.5;
 }
 
 h2 {
     font-size: 2em;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     text-align: left;
 }
@@ -34,26 +48,31 @@ h3 {
     font-weight: bold;
     text-transform: uppercase;
     text-align: left;
+}
 
+.green h2,
+.grey-second h2,
+.green p,
+.grey-second p {
+    color: rgb(249, 249, 249);
 }
 
 .self h2 {
-font-size: 24px;
-    
+    font-size: 24px;
     color: rgb(46, 189, 89);
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     line-height: 1.333;
     text-align: left;
 }
 
 .self h3 {
-font-size: 18px;
-color: rgb(46, 189, 89);
-font-weight: bold;
-text-transform: uppercase;
-line-height: 1.333;
-text-align: left;
+    font-size: 18px;
+    color: rgb(46, 189, 89);
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.333;
+    text-align: left;
 }
 
 .self p {
@@ -62,11 +81,7 @@ text-align: left;
     line-height: 1.5;
     text-align: left;
 }
-.header p {
-    font-size: 300;
 
-
-}
 
 .footer p {
     font-size: 1.2em;
@@ -87,77 +102,37 @@ span {
     font-weight: 700;
 }
 
-/* к картинкам */
-.header,
-.face,
-.cableway,
-.man,
-.ski-boot,
-.mountain,
-.skiing,
-.night-club {
+/* требования к картинкам */
+.grid-container>div>img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    background-repeat: no-repeat;
 }
 
 
 
-/* НАВБАР*/
-.navbar {
-display: flex;
-justify-content: space-between;
 
-    
-}
-    
+/* GRID */
 
-
-.logo {
-    background-image: url(../images/Logo.png);
-    height: 80px;
-    width: 80px;
-
-    
-    
-}
-
-.menu {
-    background-image: url(../images/menu.png);
-    height: 40px;
-    width: 30px;
-   
-    
-}
-
-/* сетка */
-
-.grid {
+.grid-container {
     display: grid;
-    grid-template-rows: 904px 497px 516px 515px 490px 398px 513px 600px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 904px 497px 515px 515px 498px 398px 515px 600px;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .header {
-    background-image: url(../images/header.png);
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
-    padding-bottom:278,97px;
-    
-
+    position: relative;
 }
 
+
 .face {
-    background-image: url(../images/face.png);
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-
-
 }
 
 .white {
@@ -168,20 +143,18 @@ justify-content: space-between;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
+    padding-right: 253px;
 }
 
 
 .cableway {
-    background-image: url(../images/cableway.png);
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
-
 }
 
 .man {
-    background-image: url(../images/man.png);
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
@@ -189,17 +162,14 @@ justify-content: space-between;
 }
 
 .ski-boot {
-    background-image: url(../images/ski-boot.png);
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
 
-
 }
 
 .mountain {
-    background-image: url(../images/mountain.png);
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 3;
@@ -211,16 +181,16 @@ justify-content: space-between;
 .blue {
     background-color: #3f729b;
     color: #f9f9f9;
-    padding:122.5px 90px 155.5px 0;
+    padding: 122.5px 90px 155.5px 0;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
+    padding-left: 211px;
 
 }
 
 .skiing {
-    background-image: url(../images/skiing.png);
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 4;
@@ -243,40 +213,42 @@ justify-content: space-between;
     grid-column-end: 2;
     grid-row-start: 7;
     grid-row-end: 5;
-    z-index:2;
+    z-index: 2;
 }
 
 .self {
     background-color: #212227;
-    padding:137.5px 110.5px 94.5px 58.5px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 6;
-    z-index:2;
+    z-index: 2;
+    padding-top: 138px;
+    padding-left: 56px;
+
 }
 
 .night-club {
-    background-image: url(../images/night-club.png);
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 5;
     grid-row-end: 7;
-    z-index:1;
+    z-index: 1;
 }
 
 .green {
     background-color: #2ebd59;
-    padding:138px 80px 143px 0;
+    padding: 138px 80px 143px 0;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 7;
     grid-row-end: 8;
+    padding-left: 210px;
 }
 
 .grey-second {
     background-color: #282b2f;
-    padding:136px 90px 140px 47px;
+    padding: 136px 90px 140px 47px;
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 7;
@@ -286,12 +258,12 @@ justify-content: space-between;
 /* футер и сетка грид */
 .footer {
     background-color: #212227;
-padding: 94px 206px  98px 0;
+    padding: 94px 206px 98px 210px;
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 8;
     grid-row-end: 9;
-   display: grid;
+    display: grid;
     grid-template-areas:
         "a c ss"
         "a f sp"
@@ -317,6 +289,7 @@ padding: 94px 206px  98px 0;
     grid-area: sp;
 }
 
+
 /* кнопки */
 button {
     border-color: #f9f9f9;
@@ -331,23 +304,28 @@ button {
     text-align: center;
     padding: 18px 27px;
 }
+
 .blue button {
     background-color: #3f729b;
 }
+
 .self button {
-width: 175px;
-height: 45px;
-border-width: 2px;
-border-color: rgb(46, 189, 89);
-border-style: solid;
-background-image: url(../images/clicktoplay.png);
-background-repeat: no-repeat;
-background-color: #212227;
+    font-size: 18px;
+    height: 45px;
+    border-width: 2px;
+    border-color: rgb(46, 189, 89);
+    border-style: solid;
+    background-color: #212227;
+  
 
 }
+
+
+
 .green button {
-background-color: #2ebd59;
+    background-color: #2ebd59;
 }
+
 .grey-second button {
     background-color: #282b2f;
 }
