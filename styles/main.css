@@ -1,0 +1,412 @@
+/* Шрифты начало */
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700');
+
+
+/* Шрифты */
+html,body {
+    font-size: 12px;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.2;
+
+    margin: 0;
+    padding: 0;
+
+}
+ 
+h1 {
+    font-weight: 300;
+    font-size: 6em;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+h3 {
+    color: #f9f9f9;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+
+}
+
+.self h2 {
+font-size: 24px;
+    
+    color: rgb(46, 189, 89);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.333;
+    text-align: left;
+}
+
+.self h3 {
+font-size: 18px;
+color: rgb(46, 189, 89);
+font-weight: bold;
+text-transform: uppercase;
+line-height: 1.333;
+text-align: left;
+}
+
+.self p {
+    font-size: 14px;
+    color: rgb(249, 249, 249);
+    line-height: 1.5;
+    text-align: left;
+}
+.header p {
+    font-size: 300;
+
+
+}
+
+.footer p {
+    font-size: 1.2em;
+    color: rgb(145, 145, 145);
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+p {
+    font-weight: 300;
+    font-size: 3em;
+    text-align: left;
+
+}
+
+span {
+    font-weight: 700;
+}
+
+/* к картинкам */
+.header,
+.face,
+.cableway,
+.man,
+.ski-boot,
+.mountain,
+.skiing,
+.night-club {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/* НАВБАР*/
+.navbar {
+display: flex;
+justify-content: space-between;
+
+    
+}
+    
+
+
+.logo {
+    background-image: url(../images/Logo.png);
+    height: 80px;
+    width: 80px;
+
+    
+    
+}
+
+.menu {
+    background-image: url(../images/menu.png);
+    height: 40px;
+    width: 30px;
+   
+    
+}
+
+/* сетка */
+
+.grid {
+    display: grid;
+    grid-template-rows: 904px 497px 516px 515px 490px 398px 513px 600px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.header {
+    background-image: url(../images/header.png);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-bottom:278,97px;
+    
+
+}
+
+.face {
+    background-image: url(../images/face.png);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+
+}
+
+.white {
+    background-image: #f3f1ef;
+    color: rgb(102, 102, 102);
+    padding: 112px 40px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
+.cableway {
+    background-image: url(../images/cableway.png);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+}
+
+.man {
+    background-image: url(../images/man.png);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.ski-boot {
+    background-image: url(../images/ski-boot.png);
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+
+}
+
+.mountain {
+    background-image: url(../images/mountain.png);
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+
+}
+
+.blue {
+    background-color: #3f729b;
+    color: #f9f9f9;
+    padding:122.5px 90px 155.5px 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+
+}
+
+.skiing {
+    background-image: url(../images/skiing.png);
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+
+}
+
+.blue-second {
+    background-color: #3f729b;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.grey {
+    background-color: #282b2f;
+    height: 896px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 5;
+    z-index:2;
+}
+
+.self {
+    background-color: #212227;
+    padding:137.5px 110.5px 94.5px 58.5px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    z-index:2;
+}
+
+.night-club {
+    background-image: url(../images/night-club.png);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    z-index:1;
+}
+
+.green {
+    background-color: #2ebd59;
+    padding:138px 80px 143px 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.grey-second {
+    background-color: #282b2f;
+    padding:136px 90px 140px 47px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+/* футер и сетка грид */
+.footer {
+    background-color: #212227;
+padding: 94px 206px  98px 0;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 8;
+    grid-row-end: 9;
+   display: grid;
+    grid-template-areas:
+        "a c ss"
+        "a f sp"
+}
+
+.about {
+    grid-area: a;
+}
+
+.contacts {
+    grid-area: c;
+}
+
+.follow {
+    grid-area: f;
+}
+
+.subscribe {
+    grid-area: ss;
+}
+
+.sponsors {
+    grid-area: sp;
+}
+
+/* кнопки */
+button {
+    border-color: #f9f9f9;
+    border-width: 1.87px;
+    border-style: solid;
+    border-radius: 30px;
+    color: #f9f9f9;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    padding: 18px 27px;
+}
+.blue button {
+    background-color: #3f729b;
+}
+.self button {
+width: 175px;
+height: 45px;
+border-width: 2px;
+border-color: rgb(46, 189, 89);
+border-style: solid;
+background-image: url(../images/clicktoplay.png);
+background-repeat: no-repeat;
+background-color: #212227;
+
+}
+.green button {
+background-color: #2ebd59;
+}
+.grey-second button {
+    background-color: #282b2f;
+}
+
+.email-adress {
+    width: 100%;
+    border: 1px solid #000;
+    /* Параметры рамки */
+    min-height: 56.5px;
+    /* Минимальная высота */
+    background-color: #4d4e52;
+}
+
+input[type="email"] {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    border: none;
+    /* Убираем рамку */
+    outline: none;
+    /* Убираем свечение в Chrome и Safari */
+    -webkit-appearance: none;
+    /* Убираем рамку в Chrome и Safari */
+    vertical-align: middle;
+    /* Выравнивание по середине */
+
+}
+
+input[type="submit"] {
+    font-size: 1.2em;
+    color: rgb(145, 145, 145);
+    line-height: 1.5;
+    width: 14px;
+    /* Ширина кнопки */
+    height: 13, 5px;
+    /* Высота кнопки */
+    border: none;
+    /* Убираем рамку */
+    background: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    text-align: right;
+
+}
+
+input [type="placeholder"] {
+    font-size: 1.2em;
+    color: rgb(145, 145, 147);
+    line-height: 1.5;
+    text-align: left;
+}
+
+.logo-sponsor {
+    background: url(../images/logo-sponsor.png);
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    border-width: 1px;
+    border-color: rgb(244, 248, 251);
+    border-style: solid;
+    display: inline-block;
+
+}
