@@ -4,23 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Amazing</title>
 
 
-    <link rel="stylesheet" href="../Amazing/styles/main.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-
-
     <section class="grid-container">
         <div class="header">
             <img src="images/header.png" alt="header">
+            <div class="navbar">
+                <img class="logo" src="images/Logo.png" alt="logo">
+                
+            </div>
 
-            <h1>Amazing Dude.<br /> Amazing Life.</h1>
-            <p>Welcome to the personal site of <span>John Doe.<br /></span>
-                A professional skier and a musician.</p>
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+              </div>
+              
+              <div id="main">
+                <button  onclick="openNav()"><img class="menu" src="images/menu.png" alt="menu"></button>  
+              </div>
+              
+            <div class="header-content">
+                <h1>Amazing Dude.<br /> Amazing Life.</h1>
+                <p>Welcome to the personal site of <span>John Doe.<br /></span>
+                    A professional skier and a musician.</p>
+            </div>
 
 
         </div>
@@ -46,7 +63,7 @@
             <p>Etiam lacus dolor, tincidunt vitae
                 nisi in, vulputate placerat odio.
                 Pellentesque iaculis.</p>
-            <button>VIEW ON INSTAGRAM</button>
+            <button class="btn-instagram">VIEW ON INSTAGRAM</button>
         </div>
         <div class="skiing"><img src="images/skiing.png" alt="skiing"></div>
         <div class="blue-second"></div>
@@ -59,7 +76,7 @@
                 Production Company: Sycamore
                 Producer: Laura S. Carlton
                 Executive Producer: Jack M. Heckart</p>
-            <button>CLICK TO PLAY</button>
+            <button btn-self>CLICK TO PLAY</button>
         </div>
         <div class="green">
             <h2>SPOTIFY</h2>
@@ -124,7 +141,17 @@
 
 
 
-
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "200px";
+          document.getElementById("main").style.marginLeft = "200px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
 
 </body>
 

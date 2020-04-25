@@ -18,9 +18,8 @@ h1 {
     font-size: 6em;
     text-align: left;
     color: rgb(0, 0, 0);
-    position: absolute;
-    left: 209.844px;
-    top: 352.14px;
+    margin-left: 209.844px;
+    margin-top: 300px;
 }
 
 .header img {
@@ -28,11 +27,12 @@ h1 {
 }
 
 .header p {
-    position: relative;
     font-size: 300;
-    left: 209.516px;
-    top: 583.121px;
+    margin-left: 209.516px;
+    margin-top: 44px;
+
     line-height: 1.5;
+
 }
 
 h2 {
@@ -106,6 +106,7 @@ span {
 .grid-container>div>img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 
@@ -115,8 +116,9 @@ span {
 
 .grid-container {
     display: grid;
-    grid-template-rows: 904px 497px 515px 515px 498px 398px 515px 600px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat (4, 1fr);
+    grid-template-columns: repeat (auto-fit, minmax(8, 1fr));
+
 }
 
 .header {
@@ -125,8 +127,13 @@ span {
     grid-row-start: 1;
     grid-row-end: 2;
     position: relative;
+    padding-bottom: 277, 47px;
+
 }
 
+.header-content {
+    position: relative;
+}
 
 .face {
     grid-column-start: 1;
@@ -223,9 +230,10 @@ span {
     grid-row-start: 5;
     grid-row-end: 6;
     z-index: 2;
-    padding-top: 138px;
-    padding-left: 56px;
-
+    padding-top: 139.49px;
+    padding-left: 50px;
+    padding-bottom: 94.5px;
+    padding-right: 115px;
 }
 
 .night-club {
@@ -311,14 +319,17 @@ button {
 
 .self button {
     font-size: 18px;
+    width: 172px;
     height: 45px;
     border-width: 2px;
     border-color: rgb(46, 189, 89);
     border-style: solid;
     background-color: #212227;
-  
-
+    color: rgb(46, 189, 89);
+    padding: 0;
+    margin-top: 48px;
 }
+
 
 
 
@@ -360,7 +371,7 @@ input[type="submit"] {
     line-height: 1.5;
     width: 14px;
     /* Ширина кнопки */
-    height: 13, 5px;
+    height: 13,5px;
     /* Высота кнопки */
     border: none;
     /* Убираем рамку */
@@ -387,4 +398,82 @@ input [type="placeholder"] {
     border-style: solid;
     display: inline-block;
 
+}
+
+
+.logo {
+    position: relative;
+    margin-top: 86.99px;
+    margin-left: 211.87px;
+
+}
+
+.menu {
+    top: 108px;
+    right: 232px;
+    display: block;
+    cursor: pointer;
+}
+
+.menu:hover {
+    transform: scale(1.2);
+
+}
+
+.menu:active {
+    transform: scale(0.8);
+
+}
+
+/* боковая панель*/
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+#main {
+    transition: margin-left .6s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
 }
