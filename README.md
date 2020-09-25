@@ -1,4 +1,4 @@
-<a href="https://github.com/AnastasiyaPozyomina/Amazing-Grid"> demo</a>
+<a href="https://anastasiyapozyomina.github.io/Amazing-Grid/"> demo</a>
    
    <h2>Изучение:</h2>
    <p>-  сетка GRID СSS;</p>
